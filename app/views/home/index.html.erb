@@ -1,0 +1,16 @@
+<% if user_signed_in? %>
+  <%= link_to 'Logout', destroy_user_session_path %>
+<% else %>
+  <%= link_to 'Login', new_user_session_path %>
+<% end %>
+<%= link_to 'добавить собаку', adddog_path   %>
+<br />
+<%@dogs.each do |dog|%>
+<%= dog.name%><br />
+<% if !dog.user.nil? %>
+<%= link_to dog.user.name, user_path(dog.user.name)  %><br />
+
+
+<% end %>
+<span>---------------</span><br />
+<% end %>

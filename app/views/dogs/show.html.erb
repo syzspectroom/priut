@@ -1,0 +1,3 @@
+<%= @dog.name %><br />
+ <%= image_tag(@dog.image.url(:thumb))%> <br />
+<%= link_to  @dog.user.name, user_path(@dog.user.name)  %><br />

@@ -1,0 +1,42 @@
+ru:
+  errors:
+    messages:
+      not_found: "Не найдено"
+      already_confirmed: "Подтвержден ранее"
+      not_locked: "не закрыт"
+
+  devise:
+    failure:
+      unauthenticated: 'Вам нужно зарегистрироваться или войти в систему для продолжения.'
+      unconfirmed: 'Вам необходимо потвердить учетную запись для продолжения.'
+      locked: 'Ваш аккаунт заблокирован.'
+      invalid: 'Неправильный логин или пароль.'
+      invalid_token: 'Ошибка сессии авторизации.'
+      timeout: 'Ваш сеанс истек, пожалуйста, войдите снова, чтобы продолжить.'
+      inactive: 'Ваш аккаунт еще не активирован.'
+    sessions:
+      signed_in: 'Вход успешно выполнен.'
+      signed_out: 'Выход успешно выполнен.'
+    passwords:
+      send_instructions: 'Вы получите письмо с инструкциями о том, как изменить свой пароль в течение нескольких минут.'
+      updated: 'Ваш пароль был успешно изменен. Теперь вы в системе.'
+    confirmations:
+      send_instructions: 'Вы получите письмо с инструкциями о том, чтобы подтвердить свой аккаунт в течение нескольких минут.'
+      confirmed: 'Ваш аккаунт был успешно подтвержден. Теперь вы в системе.'
+    registrations:
+      signed_up: 'You have signed up successfully. If enabled, a confirmation was sent to your e-mail.'
+      updated: 'You updated your account successfully.'
+      destroyed: 'Bye! Your account was successfully cancelled. We hope to see you again soon.'
+    unlocks:
+      send_instructions: 'You will receive an email with instructions about how to unlock your account in a few minutes.'
+      unlocked: 'Your account was successfully unlocked. You are now signed in.'
+    oauth_callbacks:
+      success: 'Successfully authorized from %{kind} account.'
+      failure: 'Could not authorize you from %{kind} because "%{reason}".'
+    mailer:
+      confirmation_instructions:
+        subject: 'Confirmation instructions'
+      reset_password_instructions:
+        subject: 'Reset password instructions'
+      unlock_instructions:
+        subject: 'Unlock Instructions'
