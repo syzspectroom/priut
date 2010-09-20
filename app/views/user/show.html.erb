@@ -3,6 +3,6 @@
 <%if !dog.slug.nil? %>
 <%= link_to  dog.name, dog_path(dog.id)  %><br />
 <% end %>
- <%= image_tag(dog.image.url) if dog.image? %>
+ <%= image_tag(dog.image.url(:thumb)) if dog.image? %>
 <br />
 <% end %>
