@@ -8,7 +8,7 @@
 <%@dogs.each do |dog|%>
 <%= dog.name%><br />
 <% if !dog.user.nil? %>
-<%= link_to dog.user.name, user_path(dog.user.name)  %><br />
+<%= link_to dog.user.id, user_path(dog.user.id)  %><br />
 
 
 <% end %>

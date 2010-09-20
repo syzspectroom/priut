@@ -7,7 +7,7 @@ Priut::Application.routes.draw do
 
 #   resources :user
 
-  match 'user/:name', :to =>'user#show', :as => :user
+  match 'user/:id', :to =>'user#show', :as => :user
   match 'dog/:id', :to =>'dogs#show', :as => :dog
   # The priority is based upon order of creation:
   # first created -> highest priority.
